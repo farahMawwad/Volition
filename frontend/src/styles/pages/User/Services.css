@@ -1,0 +1,92 @@
+#type {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    justify-content: start;
+    margin: 10vh;
+    margin-top: 5vh;
+    
+}
+label {
+    text-align: center;
+}
+#type div {
+    padding: 2vh;
+    border-bottom: 2px solid  #9edfe4;
+    border-radius: 20px;
+    cursor: pointer;
+  
+}
+#type div:hover {
+
+background-color:   #9edfe4;
+
+}
+#categorize{
+ display: grid;
+ grid-template-columns: 10% auto 80%;
+ margin: 3vh;
+ text-align: center;
+}
+img {
+    
+    border-radius: 20px;
+}
+hr{
+    border: 1% solid #9edfe4;
+    width: 100%;
+   
+}
+#courses{ 
+    padding: 2vh;
+    border: 2px solid  #9edfe4;
+    border-radius: 20px;
+    width: 20vw;
+
+}
+#courses iframe{ 
+width: 100%;
+border-radius: 20px;
+}
+
+#coursesControl{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 4vw;
+    margin: 4vw;
+}
+#prostheticsControl{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    gap: 4vw;
+    margin: 4vw;
+    margin-left: 2vw;
+}
+#prostheticsImg{
+  width: 20vw;
+  height: 20vh;
+}
+#OrganizationsControl{
+display: grid;
+grid-template-rows: auto auto;
+gap:6vh
+}
+#Organization {
+    display: grid;
+    grid-template-columns: auto 50vw;
+    grid-template-rows: 30% 50%;
+    margin: 4vw;
+    margin-left: 2vw;
+    gap:6vh
+
+}
+#Organization img {
+   grid-column-start: 1;
+   grid-row-start: 1;
+   grid-row-end: 3;
+   border-radius: 0px;
+   position: relative;
+   width: 310px;
+   
+   height:450px;
+  }

@@ -1,0 +1,62 @@
+#Edu {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 5vh;
+    margin-right: 13vw;
+    
+}
+#Edu form, #edit form {
+    width: 100%;
+    border-radius: 20px;
+    font-size: x-large;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: .5vw;
+    box-shadow: 4px 4px 10px #0f5d61;
+    padding: 6vh;
+    margin-top: 3vh;
+}
+#search {
+    justify-self: end;
+    margin: 3vh;
+    width: 40%;
+    padding: 2vh;
+    border-radius: 20px;
+}
+#Edu form label , #edit form  div label{
+    display: block;
+    margin-bottom: 2vh;
+}
+#Edu form input, select, textarea {
+    width: 75%;
+    height: 30%;
+    border-radius: 10px;
+    border-width: .5px;
+}
+#buttonAdd {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 20%;
+    background-color: #349ba0;
+    padding: 3vh;
+    color: #ffffff;
+}
+#course {
+    box-shadow: 4px 4px 10px #0f5d61;
+    padding: 3vh;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto auto 10% 10%;
+    margin: 3vh;
+}
+#edit {
+    filter:blur(0px);
+    position: absolute;
+    display: none;
+    top: 10%;
+    left: 50%;
+    transform: translate(10%, -20%);
+    margin-left: -20%;
+}

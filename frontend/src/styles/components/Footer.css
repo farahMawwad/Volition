@@ -1,0 +1,17 @@
+@import url('https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css');
+#footer,#social{
+    background-color:#9edfe4;
+    display: grid;
+    grid-template-columns: auto 50%;
+    padding: 3vh;
+}
+#social div {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+#social div div {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}

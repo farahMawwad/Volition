@@ -1,0 +1,48 @@
+#mainAdmin {
+    display: grid;
+    grid-template-columns: 25%  auto;
+    gap: 5vw;
+    position: relative;
+}
+#leftAdmin{
+  
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 70px 70px  70px 70px 70px ;
+    background-color: #0f5d61;
+    font-size:x-large;
+    color: #ffffff;
+}
+#leftAdmin div:active {
+    background-color: aliceblue;
+}
+#leftAdmin div  {
+    cursor: pointer;
+    padding: 30px;
+    margin-top: 40px;
+}
+#imglogo{
+    padding: 35px;
+    width: 220px;
+}
+#Suggestion{
+    margin: 10vh;
+    display: grid;
+    grid-template-columns:  auto;
+    background-color: aquamarine;
+}
+#Suggestion div{
+    margin: 3vh; 
+
+}
+#Suggestion_title {
+    margin: 5vh; 
+}
+h3 {
+    display: inline;
+    color: #1D5E9A;
+}
+#sug{
+    padding: 2vh;
+    border: #1D5E9A 1px solid;
+}
