@@ -48,3 +48,14 @@ const models = {
         res.status(500).json({ error: error.message }); 
       }
   }
+  exports.addCart=async(req,res)=>{
+    try {
+      console.log(req.body)
+      const id= req.params.id;
+        const {title,description,url,cost,count} = req.body
+        res.status(200).json( await User.addCart(id, title,description,url,cost,count));
+      } catch (error) {
+        console.error("An error occurred:", error); 
+        res.status(500).json({ error: error.message }); 
+      }
+  }

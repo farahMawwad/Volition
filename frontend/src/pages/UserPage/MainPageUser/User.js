@@ -8,13 +8,13 @@ function User(props) {
     const [Content, setContent] = useState("");
     const [type_Disability,setType_Disability]=useState("")
   const [id, setId] = useState(props.id_user);
-
+  const [countCart, setCountCart] = useState(0);
   useEffect(() => {
     setContent(<Home OfferDB="Offer" OrganizationDB="Organizations" />);
   },[]);
 
   return (
-    <GlobalContext.Provider  value={{Content,setContent,id,setId,type_Disability,setType_Disability}}>
+    <GlobalContext.Provider  value={{Content,setContent,id,setId,type_Disability,setType_Disability,countCart,setCountCart}}>
       <Nav  />
       <div id="User">
         {Content}

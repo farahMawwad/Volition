@@ -57,20 +57,27 @@ border-radius: 20px;
 }
 #prostheticsControl{
     display: grid;
-    grid-template-columns: 20vw 20vw 20vw 20vw;
-    gap: 4vw;
+    grid-template-columns: auto auto auto;
+gap:7vw;
     margin: 4vw;
-    margin-left: 2vw;
+    margin-left: 6vw;
 }
 #prostheticsImg{
-  width: 20vw;
-  height: 20vh;
+    width: 20vw;
+    height: 20vh;
+}
+#prosthetics{
+    border: #9edfe4 3px solid;
+    border-radius: 30px;
+padding: 13px;
+
 }
 #OrganizationsControl{
 display: grid;
 grid-template-rows: auto auto;
 gap:6vh
 }
+
 #Organization {
     display: grid;
     grid-template-columns: auto 50vw;
@@ -90,3 +97,35 @@ gap:6vh
    
    height:450px;
   }
+#cost{
+   display: grid;
+   grid-template-columns: 10px 10px 10px 70px;
+    justify-content: center;
+    gap: 5vh;
+    margin: 15px;
+}
+#cost h3 {
+    justify-self: center;
+    align-self: center;
+    margin-top: 3px;
+}
+#addCart {
+    background-color: #9edfe4;
+    width: max-content;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+#cartI{
+    display: grid ;
+    grid-template-columns: 20%  auto ;
+    grid-template-rows: 20% auto;
+    margin: 40px;
+}
+#cartI img{
+grid-row-start: 1;
+grid-row-end:6;
+}

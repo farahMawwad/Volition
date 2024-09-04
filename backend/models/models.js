@@ -11,7 +11,14 @@ const UserSchema = new mongoose.Schema({
     username: String,
     birthDay:String,
     img:String,
-    typeDisability :String
+    typeDisability :String,
+    cart:[{
+      title: String,
+      description: String,
+      url:String,
+      count:String,
+      cost:String
+    }]
 
 });
 
@@ -46,7 +53,7 @@ UserSchema.statics.signup = async function (email, pass, passConfirm, name) {
   const salt = await bcrypt.genSalt(10);
 const hash = await bcrypt.hash(pass, salt);
 const user = await this.create({userEmail:email,passward:hash,username:name, role: 1, birthDay:"",img:"",
-  typeDisability :""});
+  typeDisability :"",cart:[]});
 
   return user;
 };
@@ -84,6 +91,33 @@ UserSchema.statics.editUser=async function (id,username,birthDay,typeDisability,
       birthDay:birthDay,
       typeDisability :typeDisability,
       img :img
+    }
+    ,
+    {
+      new:true
+    }
+   )
+   return edit
+ } 
+catch{
+  console.error('Error edit user by ID:', error);
+    throw error;
+}
+}
+UserSchema.statics.addCart=async function (id,title,description,url,cost,count) {
+ try{
+   const edit = await this.findByIdAndUpdate(
+    id ,
+    {
+      $push: {
+cart:[{
+  id,
+  title,
+  description,
+  url,
+  cost,
+  count
+}]}
     }
     ,
     {
